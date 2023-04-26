@@ -1,0 +1,44 @@
+<% include partials/header %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SureRoute</title>
+        <link rel="stylesheet" href="css/login.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+    </head>
+<body style="background-image: url('css/BackGroundImg.jpeg');">
+<div class="container">
+    <div class="right" style="background-image: linear-gradient(rgba(0,0,0,0.8), white); box-shadow: -15px 0px 10px 1px rgba(0,0,0,0.3);">
+         <div>
+          <br/><br/>
+          <p class="login">LOGIN</p>  
+          </div>
+    <div>
+    <br/>
+    <br/>
+    <form action="/login" method="POST" class="form-horizontal">
+    <div class="form-group">
+         <label for="username"  class="lbl">Username:</label>
+           <div class="iptCenter">
+             <input type="text" placeholder="Enter username" name="username" class="ipt" required>
+             </div>
+    </div>
+    <br/>
+     <div class="form-group">
+         <label for="password" class="lbl">Password:</label>
+            <div class="iptCenter">
+            <input type="password" placeholder="Enter password" name="password" class="ipt" required>
+            </div>
+    </div>
+     <br/><br/>
+     <div class="form-groupcenter">
+           <div class="col-sm-offset-3 col-sm-9">
+        <button class="btn" style="background-color: #ffffff;">Login</button>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<% include ./partials/header %>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SureRoute</title>
+        <link rel="stylesheet" href="css/signup.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="536908926521-h4eakt0c9h4oafv3673oufhak87iu0fv.apps.googleusercontent.com">
+    </head>
+<body style="background-image: url('css/BackGroundImg.jpeg'); background-position: center;">
+<div class="container">
+    <div class="right" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)); box-shadow: -15px 0px 10px 1px rgba(0,0,0,0.3);">
+         <div style="width: 90%; text-align: center;">
+          <!--<h3 class="wtsr">Welcome to SureRoute</h3>  -->
+          <img src="css/Logo.png" class="wtsr"/>
+          </div>
+    <div class="formSignUp">
+    <form action="/signup" method="POST" class="form-horizontal">
+      <div class="form-group">
+        <label for="fullName"  class="lbl">Full Name:</label>
+          <div class="col-sm-9 ">
+            <input type="text" name="fullName" class="ipt" required>
+           </div>
+   </div>
+   <br/>
+    <div class="form-group">
+         <label for="username"  class="lbl">Email Address:</label>
+           <div class="col-sm-9 ">
+             <input type="email" name="username" class="ipt" required>
+            </div>
+    </div>
+    <br/>
+    <div class="form-group">
+         <label for="password" class="lbl">Password:</label>
+            <div class="col-sm-9 ">
+            <input type="password" name="password" class="ipt" required>
+            </div>
+    </div>
+    <div class="form-group" style="margin-left: 4px; color: #ffff; align-items: center;">
+    <input type="checkbox" class="lbl" name="rme" value="rme">
+    <label for="vehicle1"> Remember Me</label>
+  </div>
+  <br/>
+    <div class="form-groupcenter">
+        <div class="col-sm-offset-3 col-sm-9">
+          <button class="btn"> Create Account</button>
+        </div>
+    </div>
+    <br />
+    <div class="form-groupcenter">
+      <div class="col-sm-offset-3 col-sm-9">
+       <p style="color: #ffff"> Already have an account?<a href="/login" style="color: #ffff; font-weight:800">Sign In</a></p>
+      </div>
+  </div>
+  <div class="form-groupcenter">
+    <div class="col-sm-offset-3 col-sm-9">
+        <br/>
+     <p class="or">OR</p>
+    </div>
+    <br/>
+</div>
+<div class="form-groupcenter">
+  <div class="col-sm-offset-3 col-sm-9">
+    
+  </div>
+</div>
+</form>
+</div>
+<div class="g-signin2" data-onsuccess="onSignIn">
+<img src="/css/google1.svg" class="gimg">Login With Google</img></div>
+</div>
+</div>
+</body>
+</html>
